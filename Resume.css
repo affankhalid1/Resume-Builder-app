@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+margin: 0;
+padding: 0;
+background-color: rgb(239, 239, 239);
+color: #121212;
+ font-family: "Roboto", sans-serif;
+}
+.container{
+    width: 100vw;
+}
+.resume-container{
+    width: 620px;
+    height: 877px;
+    background-color: white;
+    margin: 30px auto;
+    border: 2px solid black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+.name-job-title{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.img1{
+    width: 240px;
+}
+.firstname{
+    font-size: 35px;
+}
+.lastname{
+    font-size: 38px;
+}
+.line{
+    width: 110%;
+    height: 3px;
+    background-color: #272727;
+}
+.profile-image{
+    position: absolute;
+    bottom: 0px;
+    right: 35px;
+    z-index: 1;
+}
+
+.body{
+    display: flex;
+}
+
+.left{
+    width: 70%;
+    height:613.9px;
+    margin-left: 10px;
+}
+.contact{
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    background-color: black;
+    height: 90px;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.phone{
+    margin-left: 2px;
+}
+.address{
+    margin-left: 2px;
+}
+.contact-headings{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.right{
+    width: 30%;
+    height: 613.9px;
+    background-color: #EBEBEB;
+}
+ul{
+    padding-left: 18px;
+    margin: 0;
+}
+ul li{
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+/* Style the generate resume button */
+.button-container{
+    padding-top: 50px;
+    width: 620px;
+    text-align: right;
+    margin: 20px auto;
+}
+
+.generate-resume-btn{
+    background-color: #121212;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 12px;
+    cursor: pointer;
+    
+}
+
+.generate-resume-btn:hover {
+    background-color: #444; 
+    /* background: linear-gradient(45deg, #444, #222); */
+}
+
+
+@media (max-width: 660px) {
+    .resume-container{
+        width: 280px;
+        height: 396px;
+        margin: 20px auto;
+    
+    }
+    .button-container{
+        width: 280px;
+    }
+    .name-job-title{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .img1{
+        width: 110px;
+    }
+    .firstname{
+        font-size: 18px;
+    }
+    .lastname{
+        font-size: 20px;
+    }
+    .line{
+        width: 98%;
+        height: 1.5px;
+        background-color: #272727;
+    }
+    .profile-image{
+        right: 13.5px;
+        z-index: 1;
+    }
+    .left{
+        width: 69%;
+        height:277.2px;
+
+        margin-left: 10px;
+    }
+    .contact{
+        gap: 7px;
+        height: 43px;
+        font-size: 6.5px;
+        width: 100%;
+    }
+    .contact-headings{
+        font-size: 9px;
+    }
+    .right{
+        width: 27.5%;
+        height: 277.2px;
+        background-color: #EBEBEB;
+    }
+    .Job-title{
+        font-size: 14px;
+    }
+    .name-h1{
+        margin: 3px;
+    }
+    .job-h2{
+        margin: 0px;
+    }
+    .h3-headings{
+        margin: 5px;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .h4-headings{
+        margin: 1.5px;
+        margin-left: 0px;
+        font-size: 8.5px;
+    }
+    .h5-headings{
+        margin: 3px;
+        margin-left: 0px;
+        font-size: 7.5px;
+    }
+    .text{
+        font-size: 8.5px;
+        margin-right: 8px;
+    }
+    .text1{
+        font-size: 9px;
+        margin-right: 3px;
+    }
+    ul{
+        padding-left: 7px;
+        margin: 0;
+    }
+    ul li{
+        padding-bottom: 4.5px;
+    }
+    .generate-resume-btn{
+        font-size: 10px;
+    }
+}
+
+  

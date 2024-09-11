@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="Resume.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>Resume Maker.io</title>
+</head>
+<body>
+    <div class="container">
+    <div class="form-container">
+        <form id="resume-form1">
+            
+                <h3 class="form-heading">About Us</h3>
+            <div class="imageUpload">
+                <label for="imageUpload">Upload your image:</label>
+             <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
+
+             <!-- Image preview -->
+            <img id="imagePreview1" class="img" src="" alt="Image Preview" width="120px">
+
+            </div>
+            <div class="name">
+            <div class="fname ptop20">
+                <label for="firstname">first Name:</label>
+                <input type="text" id="firstname"  placeholder="Laura" required>
+            </div>
+            
+            <div class="lname ptop20">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname"  placeholder=" Parker" required>
+            </div>
+            </div>
+            <div class="designation ptop20">
+                <label for="title">Designation:</label>
+            <input type="text" id="title" placeholder="UI & UX Designer" required>
+            </div>
+
+            <h3 class="form-heading">Contact</h3>
+
+            <div class="contact-fill">
+            <div class="phone-1">
+                <label for="phone">Phone:</label>
+            <input type="text" id="phone" maxlength="11" placeholder="03XXXXXXXXX" required>
+            </div>
+
+            <div class="email-1">
+                <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="username@gmail.com" required>
+            </div>
+
+            </div>
+            <div class="address-form ptop20">
+                <label for="address">Address:</label>
+            <input type="text" id="address"  placeholder="Your Street Address" required>
+            </div>
+            <h3 class="form-heading">Profile</h3>
+            <div class="profile">
+                <label for="profile">Profile:</label>
+            <textarea id="profile"  rows="3" placeholder="Profile description..."></textarea>
+            </div>
+            
+           
+
+        </form>
+        <form id="resume-form2">
+
+            <h3 class="form-heading">Experience</h3>
+            <div class="working">
+                <div class="current-position">
+                <label for="position">Current-Position:</label>
+                <input type="text" id="current-position"  placeholder="Senior Software Engineer" required>
+                </div>
+
+                <div class="company-Name">
+                <label for="Company-Name">Company Name: </label>
+                <input type="text" id="company-Name"   placeholder="Company Name" required>
+                </div>
+            </div>
+
+            <div class="experience ptop20">
+                <label for="experience">Experience:</label>
+            <textarea id="experience" rows="3" placeholder="Experience details..."></textarea>
+            </div>
+
+            <h3 class="form-heading">Education</h3>
+
+            <div class="dropdown-container">
+                <div class=" ptop10">
+                <select id="Universities">
+                    <option value="">Select University</option>
+                    <optgroup label="Public Universities">
+                        <option value="University of Karachi (UoK)">University of Karachi (UoK)</option>
+                        <option value="NED University of Engineering and Technology">NED University of Engineering and Technology</option>
+                        <option value="Dawood University of Engineering and Technology (DUET)">Dawood University of Engineering and Technology (DUET)</option>
+                        <option value="Sindh Madressatul Islam University (SMIU)">Sindh Madressatul Islam University (SMIU)</option>
+                        <option value="Benazir Bhutto Shaheed University, Lyari">Benazir Bhutto Shaheed University, Lyari</option>
+                        <option value="Federal Urdu University of Arts, Science and Technology (FUUAST)">Federal Urdu University of Arts, Science and Technology (FUUAST)</option>
+                        <option value="Shaheed Benazir Bhutto University (SBBU)">Shaheed Benazir Bhutto University (SBBU)</option>
+                        <option value="Jinnah Sindh Medical University (JSMU)">Jinnah Sindh Medical University (JSMU)</option>
+                        <option value="Dow University of Health Sciences (DUHS)">Dow University of Health Sciences (DUHS)</option>
+                        <option value="Institute of Business Administration (IBA)">Institute of Business Administration (IBA)</option>
+                        <option value="LUMS (Lahore University of Management Sciences)">LUMS (Lahore University of Management Sciences)</option>
+                    </optgroup>
+
+                    <optgroup label="Private Universities">
+
+                        <option value="NUST (National University of Sciences and Technology)">NUST (National University of Sciences and Technology)</option>
+                        <option value="FAST (National University of Computer and Emerging Sciences - NUCES)">FAST (National University of Computer and Emerging Sciences - NUCES)</option>
+                        <option value="Aga Khan University (AKU)">Aga Khan University (AKU)</option>
+                        <option value="Hamdard University">Hamdard University</option>
+                        <option value="Iqra University">Iqra University</option>
+                        <option value="Shaheed Zulfikar Ali Bhutto Institute of Science and Technology (SZABIST)">Shaheed Zulfikar Ali Bhutto Institute of Science and Technology (SZABIST)</option>
+                        <option value="Institute of Business Management (IoBM)">Institute of Business Management (IoBM)</option>
+                        <option value="Greenwich University">Greenwich University</option>
+                        <option value="Ziauddin University">Ziauddin University</option>
+                        <option value="Jinnah University for Women">Jinnah University for Women</option>
+                        <option value="Iqra University">Iqra University</option>
+                        <option value="Aga Khan University (AKU)">MultAga Khan University (AKU)an</option>
+                        <option value="Bahria University (Karachi Campus)">Bahria University (Karachi Campus)</option>
+                        <option value="Indus Valley School of Art and Architecture (IVS)">Indus Valley School of Art and Architecture (IVS)</option>
+                        <option value="Mohammad Ali Jinnah University (MAJU)">Mohammad Ali Jinnah University (MAJU)</option>
+                        <option value="KASB Institute of Technology">KASB Institute of Technology</option>
+                        <option value="Textile Institute of Pakistan (TIP)">Textile Institute of Pakistan (TIP)</option>
+                        <option value="Hamdard University">Hamdard University</option>
+                        <option value="Iqra University">Iqra University</option>
+                        <option value="Aga Khan University (AKU)">MultAga Khan University (AKU)an</option>
+                        <option value="Pakistan Air Force - Karachi Institute of Economics and Technology (PAF-KIET)">Pakistan Air Force - Karachi Institute of Economics and Technology (PAF-KIET)</option>
+                        <option value="Newports Institute of Communications and Economics">Newports Institute of Communications and Economics</option>
+                        <option value="Preston University (Karachi Campus)">Preston University (Karachi Campus)</option>
+                        <option value="Dadabhoy Institute of Higher Education">Dadabhoy Institute of Higher Education</option>
+                        <option value="Usman Institute of Technology (UIT)">Usman Institute of Technology (UIT)</option>
+                    </optgroup>
+                    </select>
+                </div>
+                    
+                    <div class=" ptop10">
+                    <select  id="degrees">
+                    <option value="">Select Degree</option>
+                        <optgroup label="Bachelor's Degrees">
+                            <option value="BA">BA (Bachelor of Arts)</option>
+                            <option value="BS">BS (Bachelor of Science)</option>
+                            <option value="BSc">BSc (Bachelor of Science)</option>
+                            <option value="BCom">BCom (Bachelor of Commerce)</option>
+                            <option value="BBA">BBA (Bachelor of Business Administration)</option>
+                            <option value="BE">BE (Bachelor of Engineering)</option>
+                            <option value="BEd">BEd (Bachelor of Education)</option>
+                            <option value="LLB">LLB (Bachelor of Laws)</option>
+                            <option value="MBBS">MBBS (Bachelor of Medicine, Bachelor of Surgery)</option>
+                            <option value="BDS">BDS (Bachelor of Dental Surgery)</option>
+                            <option value="Pharmd">PharmD (Doctor of Pharmacy)</option>
+                            <option value="DPT">DPT (Doctor of Physical Therapy)</option>
+                            <option value="BScN">BScN (Bachelor of Science in Nursing)</option>
+                            <option value="BArch">BArch (Bachelor of Architecture)</option>
+                            <option value="BDes">BDes (BaMhelor of Design)</option>
+                        </optgroup>
+                        
+                        <optgroup label="Master's Degrees">
+                            <option value="MA">MA (Master of Arts)</option>
+                            <option value="MSc">MSc (Master of Science)</option>
+                            <option value="MCom">MCom (Master of Commerce)</option>
+                            <option value="MBa">MBA (Master of Business Administration)</option>
+                            <option value="MS">MS (Master of Science)</option>
+                            <option value="MPhil">MPhil (Master of Philosophy)</option>
+                            <option value="MPH">MPH (Master of Public Health)</option>
+                            <option value="MEd">MEd (Master of Education)</option>
+                            <option value="LLM">LLM (Master of Laws)</option>
+                            <option value="ME">ME (Master of Engineering)</option>
+                        </optgroup>
+                        
+                        <optgroup label="Doctorate Degrees">
+                            <option value="PhD">PhD (Doctor of Philosophy)</option>
+                        </optgroup>
+                        
+                        <optgroup label="Professional Degrees">
+                            <option value="MD">MD (Doctor of Medicine)</option>
+                            <option value="MMed">MMed (Master of Medicine)</option>
+                        </optgroup>
+                    </select>
+                
+            </div>
+                </div>
+                <div class="ptop20 date">
+                    <div class="startdate">
+                        <label for="year-of-graduation">Start Date:</label>
+                    <input type="text" pattern="\d{4}"  maxlength="4" id="start-date" placeholder="YYYY" required>
+                    </div>
+                    <div class="enddate">
+                        <label for="year-of-graduation">End Date:</label>
+                    <input type="text" pattern="\d{4}" maxlength="4" id="end-date" placeholder="YYYY" required>
+                    </div>
+                </div>
+
+            <h3 class="form-heading">Language</h3>
+
+            <label for="language">Language:</label>
+            <div class="Language">
+                <div class="L1">
+                    <input type="text" id="L1."  placeholder="e.g English" required>
+                </div>
+            <div class="L2">
+                <input type="text" id="L2."  placeholder="e.g Chinese" >
+            </div>
+            </div>
+
+            <h3 class="form-heading">Skills</h3>
+                
+            <label for="skills">Skills:</label>
+            <div class="skills1">
+            <div class="S1">
+                <input type="text" id="S1"  placeholder="e.g Web developer" required>
+            </div>
+            <div class="S2"><input type="text" id="S2"  placeholder="e.g Software Developer" required></div>
+            </div>
+            <div class="skills2">
+            <div class="S3">
+                <input type="text" id="S3"  placeholder="e.g Graphics Designer " required>
+            </div>
+            </div>
+            
+        </form>
+    </div>
+
+
+    <!-- <button class="generatepdf" onclick="generateStyledPDF()">Generate PDF</button> -->
+    <div class="resume-with-button">
+        <div class="button-container">
+            <button class="generate-resume-btn" onclick="generateStyledPDF()">Download Resume</button>
+        </div>
+    <div class="resume-container" id="resume-container">
+        <div class="header">
+        <div class="name-job-title">
+        <h1 class="name-h1"><div class="firstname" id="display-firstname">AFFAN</div>
+            <div class ="lastname" id="display-lastname">KHALID</div></h1>
+            <div class="line"></div>
+        <h2 class="job-h2"><span class="Job-title" id="display-title">WEB DEVELOPER</span></h2>
+    </div>
+        <div class="profile-image">
+            <!-- Image preview -->
+            <img id="imagePreview" class="img1" src="" alt="Image Preview">
+        </div>
+    </div>
+    
+    <div class="body">
+        <div class="left">
+            <div class="contact">
+            <div class="phone">
+                <div class="contact-headings">Phone</div>
+                <div id="display-phone">03000000000</div>
+            </div>
+            <div class="email">
+                <div class="contact-headings">Email</div>
+                <div id="display-email">abc@gmail.com</div>
+            </div>
+            <div class="address">
+                <div class="contact-headings">Address</div>
+                <div id="display-address">abc, karachi</div>
+            </div>
+            
+            </div>
+    
+            <div class="profile p10">
+                <h3 class="h3-headings">PROFILE</h3>
+                <div  class="profile-text text"id="display-profile">Experienced Web Developer skilled in HTML, CSS, JavaScript, and modern frameworks, focused on creating responsive, user-friendly websites. Passionate about continuous learning and delivering seamless web experiences.</div>
+            </div>
+    
+            <div class="experience p10">
+                <h3 class="h3-headings">EXPERIENCE</h3>
+                <h4 class="h4-headings">
+                    <span id="display-position">Senior Web Developer</span><span>-</span> <span class="years">Present</span></h4>
+                <h4 class="company-name h4-headings" id="display-company-name">Artz Vision</h4>
+                <div class="text" id="display-experience">
+                    Developed responsive websites using HTML, CSS, JavaScript, and modern frameworks while collaborating with teams to implement user-centric designs.</div>
+            </div>
+    
+            <div class="Reference p10">
+                <h3 class="h3-headings">REFERENCE</h3>
+                <h5 class="job-position h5-headings"><div id="display-position-ref">Senior Web Developer</div> 
+                    <div><span id="display-firstname-ref">AFFAN</span> <span id="display-lastname-ref">KHALID</span></div>
+                    <div id="display-company-name-ref">Artz Vision</div></h5>
+            </div>
+        </div>
+        <div class="right">
+            <div class="education p-10 p-top20">
+                <h3 class="p10 h3-headings">EDUCATION</h3>
+                <div class="flex text1">
+                <span class=" p10 "><span id="display-start-date">2014</span> <span>-</span> <span id="display-end-date">2016</span></span>
+                <span class="degree-name p10 p-top10" id="display-degree">Degree Name</span>
+                <span class="University-name p10 pr-8 p-top10" id="display-university">University name</span>
+            </div>
+            <div class="language p10  ptop50">
+                <h3 class="h3-headings">LANGUAGE</h3>
+                <ul>
+                    <li class="text1" id="display-L1">English</li>
+                    <li class="text1" id="display-L2">Chinese</li>
+                </ul>
+            </div>
+            <div class="skills p10 ptop50">
+                <h3 class="h3-headings">SKILLS</h3>
+                <ul>
+                    <li class="text1" id="display-S1">Graphics Design</li>
+                    <li class="text1" id="display-S2">Web Development</li>
+                         <li class="text1" id="display-S3">Software- Development</li>
+                </ul>
+            </div>     
+            </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
